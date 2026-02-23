@@ -1,20 +1,26 @@
-public class Main {
+/**
+* OOPSBannerApp UC4 - String Array and Loop
+ * This version stores the banner lines in a String array 
+ * and uses an enhanced for-loop to print them, reducing repetitive code.
+ *
+ * @author Developer
+ * @version 4.0
+ */
+public class OOPSBannerApp {
     public static void main(String[] args) {
 
-        // 1. Define String array
-        String[] lines = new String[7];
+        String[] banner = new String[7];
 
-        // 2. Populate array using String.join()
-        lines[0] = String.join(" ", "  ***  ", " ***** ");
-        lines[1] = String.join(" ", " **   ** ", " **     ");
-        lines[2] = String.join(" ", " **   ** ", " **     ");
-        lines[3] = String.join(" ", " **   ** ", " ***** ");
-        lines[4] = String.join(" ", " **   ** ", "    **  ");
-        lines[5] = String.join(" ", " **   ** ", " **   ** ");
-        lines[6] = String.join(" ", "  ***  ", " ***** ");
+        banner[0] = String.join(" ", "  *****  ", "  *****  ", " ******  ", "  *****  ");
+        banner[1] = String.join(" ", " *     * ", " *     * ", " *     * ", " *     * ");
+        banner[2] = String.join(" ", " *     * ", " *     * ", " *     * ", " *       ");
+        banner[3] = String.join(" ", " *     * ", " *     * ", " ******  ", "  *****  ");
+        banner[4] = String.join(" ", " *     * ", " *     * ", " *       ", "       * ");
+        banner[5] = String.join(" ", " *     * ", " *     * ", " *       ", " *     * ");
+        banner[6] = String.join(" ", "  *****  ", "  *****  ", " *       ", "  *****  ");
 
-        // 3. Print using for-each loop
-        for (String line : lines) {
+        // Step 3: Use enhanced for-loop to print
+        for (String line : banner) {
             System.out.println(line);
         }
     }
